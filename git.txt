@@ -1,0 +1,51 @@
+[gonzalo@nautilus Domino.activity]$ git init
+Initialized empty Git repository in /home/gonzalo/Activities/Domino.activity/.git/
+[gonzalo@nautilus Domino.activity]$ git remote add origin gitorious@git.sugarlabs.org:domino/mainline.git
+[gonzalo@nautilus Domino.activity]$ git clone git://git.sugarlabs.org/domino/mainline.git
+Initialized empty Git repository in /home/gonzalo/Activities/Domino.activity/mainline/.git/
+warning: You appear to have cloned an empty repository.
+[gonzalo@nautilus Domino.activity]$ git add *.py
+[gonzalo@nautilus Domino.activity]$ git add TODO
+[gonzalo@nautilus Domino.activity]$ git add activity/activity.info
+[gonzalo@nautilus Domino.activity]$ git add activity/domino-icon.svg
+[gonzalo@nautilus Domino.activity]$ git add icons/*.svg
+[gonzalo@nautilus Domino.activity]$ git add locale/es/activity.linfo 
+[gonzalo@nautilus Domino.activity]$ git add locale/es/LC_MESSAGES/org.laptop.Domino.mo 
+[gonzalo@nautilus Domino.activity]$ git add po/Domino.pot
+[gonzalo@nautilus Domino.activity]$ git add po/es.po
+[gonzalo@nautilus Domino.activity]$ git add po/POTFILES.in 
+[gonzalo@nautilus Domino.activity]$ git commit -a
+[master (root-commit) cae62c4] agrego todos los archivos
+ 19 files changed, 2423 insertions(+), 0 deletions(-)
+ create mode 100644 TODO
+ create mode 100644 activity/activity.info
+ create mode 100644 activity/domino-icon.svg
+ create mode 100644 cairoutils.py
+ create mode 100644 dominoactivity.py
+ create mode 100644 dominogame.py
+ create mode 100644 dominopiece.py
+ create mode 100644 dominopieceprocessor.py
+ create mode 100644 dominoplayer.py
+ create mode 100644 dominoview.py
+ create mode 100644 icons/cursors.svg
+ create mode 100644 icons/gamekeys.svg
+ create mode 100644 icons/scores.svg
+ create mode 100644 locale/es/LC_MESSAGES/org.laptop.Domino.mo
+ create mode 100644 locale/es/activity.linfo
+ create mode 100644 po/Domino.pot
+ create mode 100644 po/POTFILES.in
+ create mode 100644 po/es.po
+ create mode 100644 setup.py
+[gonzalo@nautilus Domino.activity]$ git push origin master 
+Counting objects: 27, done.
+Delta compression using 3 threads.
+Compressing objects: 100% (23/23), done.
+Writing objects: 100% (27/27), 23.10 KiB, done.
+Total 27 (delta 1), reused 0 (delta 0)
+To gitorious@git.sugarlabs.org:domino/mainline.git
+ * [new branch]      master -> master
+=> Syncing Gitorious... fatal: bad object 0000000000000000000000000000000000000000
+
+Heads up: head of  changed to cae62c461a6f187bbbd4bb26a080a9f76f9d8b95 on master
+[OK]
+

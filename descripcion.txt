@@ -1,0 +1,36 @@
+Domino:
+Matriz para posicion de las fichas.
+Lista con todas las fichas.
+Posicion de las dos puntas de las fichas en juego.
+Valores de las dos puntas.
+Lista de jugadores.
+Jugador actual.
+
+Jugador:
+Lista de fichas de cada jugador.
+Pieza seleccionada.
+
+
+Pieza:
+Direccion (NS, SN. EO, OE)
+ValorN, ValorP
+RepresentacionN, RepresentacionP
+
+
+JUEGO:
+
+	ESTADO: 
+
+	INICIO:
+		Crear fichas
+		dibujar tablero
+		agregar usuarios
+		Seleccionar primer jugador
+		
+		Juega jugador N:
+				Selecciona pieza
+				Verifica posicion valida
+				
+
+				
+
